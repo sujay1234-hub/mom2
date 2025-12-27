@@ -19,7 +19,7 @@
     <p>This is a little playlist of songs that make me think of you. Hope you enjoy!</p>
     
     <button onclick="revealPhoto()">Click for a Surprise! 🎉</button>
-    <img id="surprise-photo" src="mom-photo.jpg" alt="Photo of Mom">
+    <img id="surprise-photo" src="mom.jpg" alt="Photo of Mom">
     
     <div class="song">
         <h2>Unchained Melody</h2>
@@ -42,7 +42,7 @@
     
     <script>
         function revealPhoto() {
-            const photo = document.getElementById('mom.jpg');
+            const photo = document.getElementById('surprise-photo');
             if (photo.style.display === 'none' || photo.style.display === '') {
                 photo.style.display = 'block';
             } else {
