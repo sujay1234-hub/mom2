@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Songs for Mom</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f0f0; text-align: center; padding: 20px; }
+        h1 { color: #d63384; }
+        .song { margin: 20px; }
+        video { max-width: 100%; height: auto; }
+        #surprise-photo { display: none; max-width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        button { background-color: #d63384; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; }
+        button:hover { background-color: #b02a6a; }
+    </style>
+</head>
+<body>
+    <h1>কিতা রে, নিচে গিয়ে গান চালু! 🎶</h1>
+    <p>This is a little playlist of songs that make me think of you. Hope you enjoy!</p>
+    
+    <button onclick="revealPhoto()">Click for a Surprise! 🎉</button>
+    <img id="surprise-photo" src="mom-photo.jpg" alt="Photo of Mom">
+    
+    <div class="song">
+        <h2>Unchained Melody</h2>
+        <video controls>
+            <source src="mom.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <!-- Add more videos/audio here, e.g.:
+    <div class="song">
+        <h2>Another Song</h2>
+        <video controls>
+            <source src="another-song.mp4" type="video/mp4">
+        </video>
+    </div>
+    -->
+    
+    <p>Love, [MONA]</p>
+    
+    <script>
+        function revealPhoto() {
+            const photo = document.getElementById('mom.jpg');
+            if (photo.style.display === 'none' || photo.style.display === '') {
+                photo.style.display = 'block';
+            } else {
+                photo.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
